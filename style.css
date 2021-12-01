@@ -1,0 +1,119 @@
+  /* get the required local files */
+  @font-face {
+    font-family: 'Roboto';
+    src: url('roboto.eot'); /* IE9 Compat Modes */
+    src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('roboto.woff') format('woff'), /* Modern Browsers */
+    url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto';
+      /*border: 1px solid black;*/
+  }
+
+ main {
+     display: grid;
+     grid-template-columns: 1fr 2fr 1fr ;
+     grid-template-rows: 8rem 1fr 1fr;
+ } 
+
+ header {
+     font-size: 1.5em;
+     grid-column: 1 / span 3;
+     padding: 20px;
+     background-color: rgb(126, 192, 126);
+ }
+
+ section.political-section {
+     grid-column: 2;
+     grid-row: 2;
+     padding-bottom: 50px;
+ }
+
+ section.comedy-section {
+     grid-column:2;
+     grid-row: 3;   
+ }
+
+ h2 {
+    font-size: 2rem; 
+    padding: 40px;
+     padding-left: 0px;
+ }
+
+.cards-political {
+     display:grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     gap: 40px;
+     border-radius: 5px;
+ }
+
+ .political {
+     display:grid;
+     gap: 40px;
+     background-color: aqua;
+     border-radius: 5px;
+     box-shadow: 5px 5px darkgrey;
+     padding: 30px;
+     text-align: center;
+ }
+
+ .cards-comedy {
+     display:grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     row-gap: 40px;
+}
+
+.comedy {
+    display:grid;
+    gap: 40px;
+    background-color: rgb(64, 84, 122);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px darkgrey;
+    padding: 30px;
+    text-align: center;
+}
+
+.att {
+    text-align: right;
+}
+
+.political:nth-child(1) {
+    background-color:rgb(230, 222, 115);
+}
+
+.political:nth-child(2) {
+    background-color:rgb(185, 84, 172);
+}
+
+.political:nth-child(3) {
+    background-color:rgb(145, 177, 59);
+}
+
+.political:nth-child(4) {
+    background-color:rgb(60, 170, 152);
+}
+
+.comedy:nth-child(1) {
+    background-color:rgb(199, 124, 135);
+}
+
+.comedy:nth-child(2) {
+    background-color:rgb(206, 179, 183);
+}
+
+.comedy:nth-child(3) {
+    background-color:rgb(216, 78, 98);
+}
+
+.comedy:nth-child(4) {
+    background-color:rgb(151, 148, 149);
+}
+
